@@ -50,7 +50,7 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Introduction
-    url:               /introduction/
+    url:               /about/
   - title:             La progressivité dans les médias
     url:               /progressivite/
   - title:             Les piliers de la progressivité en cartographie
