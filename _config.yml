@@ -50,7 +50,7 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Introduction
-    url:               /about/
+    url:               /introduction/
   - title:             La progressivité dans les médias
     url:               /progressivite/
   - title:             Les piliers de la progressivité
@@ -186,10 +186,10 @@ kramdown:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [about, newsletter, related, random, comments]
+  post_addons:         [introduction, newsletter, related, random, comments]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other, comments]
+  project_addons:      [introduction, newsletter, other, comments]
 
   # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    false
@@ -366,6 +366,7 @@ plugins:
 social:
   name:                <Bérénice> <Le Mao>
   links:
+    - /assets/img/geovis.png
     - https://www.umr-lastig.fr/Berenice-Le-Mao/<Berenice-Le-Mao>
     - https://github.com/<berenice-lm>
 
