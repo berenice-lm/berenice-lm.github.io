@@ -12,7 +12,7 @@ description: >
 <div id="bd-viewer" style="text-align:center; max-width:800px; margin:auto;">
   <img id="bd-page" src="/assets/bd/coherence/page1.png" style="width:100%; height:auto; border:1px solid #ccc; border-radius:8px;"/>
 
-  <p id="page-number" style="margin-top:0.5rem; font-weight:bold;">Page 1 / 3</p>
+  <p id="page-number" style="margin-top:0.5rem; font-weight:bold;">Page 1 / 12</p>
 
   <div style="margin-top:1rem;">
     <button onclick="prevPage()" style="padding:0.5rem 1rem; margin-right:1rem;">⬅ Précédent</button>
@@ -24,7 +24,16 @@ description: >
   const pages = [
     "/assets/bd/coherence/page1.png",
     "/assets/bd/coherence/page2.png",
-    "/assets/bd/coherence/page3.png"
+    "/assets/bd/coherence/page3.png",
+    "/assets/bd/coherence/page4.png",
+    "/assets/bd/coherence/page5.png",
+    "/assets/bd/coherence/page6.png",
+    "/assets/bd/coherence/page7.png",
+    "/assets/bd/coherence/page8.png",
+    "/assets/bd/coherence/page9.png",
+    "/assets/bd/coherence/page10.png",
+    "/assets/bd/coherence/pag11.png",
+    "/assets/bd/coherence/page12.png"
   ];
   let current = 0;
   const img = document.getElementById("bd-page");
