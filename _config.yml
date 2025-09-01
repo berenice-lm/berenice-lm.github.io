@@ -63,10 +63,10 @@ menu:
 legal:
   - title:             LICENSE
     url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+  - title:             Les piliers de la progressivité
+    url:               /piliers/
+  - title:             La progressivité dans les autres médias
+    url:               /progressivite/
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2024. All rights reserved.
@@ -363,12 +363,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-social:
-  name:                <Bérénice> <Le Mao>
-  links:
-    - /assets/img/geovis.png
-    - https://www.umr-lastig.fr/Berenice-Le-Mao/<Berenice-Le-Mao>
-    - https://github.com/<berenice-lm>
+#social:
+  #name:                <Bérénice> <Le Mao>
+  #links:
+  #  - https://www.umr-lastig.fr/Berenice-Le-Mao/<Berenice-Le-Mao>
+  #  - https://github.com/<berenice-lm>
 
 
 # Plugin Configs
