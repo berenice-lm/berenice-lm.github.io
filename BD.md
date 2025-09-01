@@ -32,7 +32,7 @@ description: >
     "/assets/bd/coherence/page8.png",
     "/assets/bd/coherence/page9.png",
     "/assets/bd/coherence/page10.png",
-    "/assets/bd/coherence/pag11.png",
+    "/assets/bd/coherence/page11.png",
     "/assets/bd/coherence/page12.png"
   ];
   let current = 0;
