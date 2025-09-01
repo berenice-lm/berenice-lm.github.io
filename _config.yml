@@ -366,9 +366,8 @@ plugins:
 social:
   name:                <Bérénice> <Le Mao>
   links:
-    - /assets/img/geovis.png
-    # - https://twitter.com/<username>
-    # - https://github.com/<berenice-lm>
+    - https://www.umr-lastig.fr/Berenice-Le-Mao/<Berenice-Le-Mao>
+    - https://github.com/<berenice-lm>
 
 
 # Plugin Configs
