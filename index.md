@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /
 ---
 
 # Introduction
@@ -9,4 +8,4 @@ permalink: /
 
 ## La généralisation cartographique
 
-## La progressivité
+## La généralisation cartographique

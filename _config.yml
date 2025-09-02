@@ -174,14 +174,6 @@ defaults:
       seo:
         type:          WebPage
 
-  # Pour que la page d'accueil soit "introduction.md" au lieu de la liste des posts :
-  # Ajoutez ou modifiez la ligne suivante :
-  - scope:
-      path: ""
-      type: pages
-    values:
-      permalink: /
-
 kramdown:
   math_engine:         katex
   math_engine_opts:    {}
