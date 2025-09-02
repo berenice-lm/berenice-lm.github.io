@@ -49,12 +49,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Introduction
-    url:               /introduction/
   - title:             La progressivité dans les médias
     url:               /progressivite/
   - title:             Les piliers de la progressivité
     url:               /piliers/
+  - title:             Expériences
+    url:               /experience/
   - title:             La progressivité en BD
     url:               /BD/
 
@@ -173,6 +173,14 @@ defaults:
     values:
       seo:
         type:          WebPage
+
+  # Pour que la page d'accueil soit "introduction.md" au lieu de la liste des posts :
+  # Ajoutez ou modifiez la ligne suivante :
+  - scope:
+      path: ""
+      type: pages
+    values:
+      permalink: /
 
 kramdown:
   math_engine:         katex
