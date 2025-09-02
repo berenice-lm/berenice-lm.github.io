@@ -1,19 +1,17 @@
 ---
-layout: blog
-title: Site
-description: >
-  Site de vulgarisation scientifique autour du concept de progressivité en cartographie
-last_modified_at: 2025-08-03
-no_link_title: false 
-no_excerpt: false 
-hide_image: false
-cover: true
+layout: home
+title: Accueil
 ---
 
-# Introduction
+<!--
+Pour personnaliser la page d'accueil avec le layout "home" de Hydejack,
+vous devez modifier le template du thème (ex : `_layouts/home.html`) ou ajouter du contenu via les fichiers de configuration (_config.yml, menu, sidebar, etc.).
 
-## La carte pan-scalaire
+Si vous souhaitez ajouter du texte ou des blocs personnalisés sur la page d'accueil,
+remplacez `layout: home` par `layout: page` et ajoutez votre contenu Markdown ici.
 
-## La généralisation cartographique
+Sinon, pour n'afficher que le background, le logo et la liste des titres du menu,
+laissez ce fichier vide avec `layout: home` : le contenu affiché sera celui du thème Hydejack (logo, background, titres du menu).
 
-## La généralisation cartographique
+Pour modifier la liste des titres affichés, éditez la section `menu:` dans `_config.yml`.
+-->
