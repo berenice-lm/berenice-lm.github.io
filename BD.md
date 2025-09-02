@@ -10,19 +10,19 @@ A la manière du dessinateur Scott McCloud[^1] qui explique la mécanique des ba
 
 # La cohérence
 
-<div id="bd-viewer" style="text-align:center; max-width:800px; margin:auto;">
-  <img id="bd-page" src="/assets/bd/coherence/page1.png" style="width:100%; height:auto; border:1px solid #ccc; border-radius:8px;"/>
+<div id="bd-viewer-coherence" style="text-align:center; max-width:800px; margin:auto;">
+  <img id="bd-page-coherence" src="/assets/bd/coherence/page1.png" style="width:100%; height:auto; border:1px solid #ccc; border-radius:8px;"/>
 
-  <p id="page-number" style="margin-top:0.5rem; font-weight:bold;">Page 1 / 12</p>
+  <p id="page-number-coherence" style="margin-top:0.5rem; font-weight:bold;">Page 1 / 12</p>
 
   <div style="margin-top:1rem;">
-    <button onclick="prevPage()" style="padding:0.5rem 1rem; margin-right:1rem;">⬅ Précédent</button>
-    <button onclick="nextPage()" style="padding:0.5rem 1rem;">Suivant ➡</button>
+    <button onclick="prevPageCoherence()" style="padding:0.5rem 1rem; margin-right:1rem;">⬅ Précédent</button>
+    <button onclick="nextPageCoherence()" style="padding:0.5rem 1rem;">Suivant ➡</button>
   </div>
 </div>
 
 <script>
-  const pages = [
+  const pagesCoherence = [
     "/assets/bd/coherence/page1.png",
     "/assets/bd/coherence/page2.png",
     "/assets/bd/coherence/page3.png",
@@ -36,36 +36,35 @@ A la manière du dessinateur Scott McCloud[^1] qui explique la mécanique des ba
     "/assets/bd/coherence/page11.png",
     "/assets/bd/coherence/page12.png"
   ];
-  let current = 0;
-  const img = document.getElementById("bd-page");
-  const counter = document.getElementById("page-number");
+  let currentCoherence = 0;
+  const imgCoherence = document.getElementById("bd-page-coherence");
+  const counterCoherence = document.getElementById("page-number-coherence");
 
-  function showPage(n) {
-    current = (n + pages.length) % pages.length;
-    img.src = pages[current];
-    counter.textContent = `Page ${current + 1} / ${pages.length}`;
+  function showPageCoherence(n) {
+    currentCoherence = (n + pagesCoherence.length) % pagesCoherence.length;
+    imgCoherence.src = pagesCoherence[currentCoherence];
+    counterCoherence.textContent = `Page ${currentCoherence + 1} / ${pagesCoherence.length}`;
   }
 
-  function prevPage() { showPage(current - 1); }
-  function nextPage() { showPage(current + 1); }
+  function prevPageCoherence() { showPageCoherence(currentCoherence - 1); }
+  function nextPageCoherence() { showPageCoherence(currentCoherence + 1); }
 </script>
-
 
 # Le rythme
 
-<div id="bd-viewer" style="text-align:center; max-width:800px; margin:auto;">
-  <img id="bd-page" src="/assets/bd/rythme/page1.png" style="width:100%; height:auto; border:1px solid #ccc; border-radius:8px;"/>
+<div id="bd-viewer-rythme" style="text-align:center; max-width:800px; margin:auto;">
+  <img id="bd-page-rythme" src="/assets/bd/rythme/page1.png" style="width:100%; height:auto; border:1px solid #ccc; border-radius:8px;"/>
 
-  <p id="page-number" style="margin-top:0.5rem; font-weight:bold;">Page 1 / 23</p>
+  <p id="page-number-rythme" style="margin-top:0.5rem; font-weight:bold;">Page 1 / 23</p>
 
   <div style="margin-top:1rem;">
-    <button onclick="prevPage()" style="padding:0.5rem 1rem; margin-right:1rem;">⬅ Précédent</button>
-    <button onclick="nextPage()" style="padding:0.5rem 1rem;">Suivant ➡</button>
+    <button onclick="prevPageRythme()" style="padding:0.5rem 1rem; margin-right:1rem;">⬅ Précédent</button>
+    <button onclick="nextPageRythme()" style="padding:0.5rem 1rem;">Suivant ➡</button>
   </div>
 </div>
 
 <script>
-  const pages = [
+  const pagesRythme = [
     "/assets/bd/rythme/page1.png",
     "/assets/bd/rythme/page2.png",
     "/assets/bd/rythme/page3.png",
@@ -90,16 +89,16 @@ A la manière du dessinateur Scott McCloud[^1] qui explique la mécanique des ba
     "/assets/bd/rythme/page22.png",
     "/assets/bd/rythme/page23.png"
   ];
-  let current = 0;
-  const img = document.getElementById("bd-page");
-  const counter = document.getElementById("page-number");
+  let currentRythme = 0;
+  const imgRythme = document.getElementById("bd-page-rythme");
+  const counterRythme = document.getElementById("page-number-rythme");
 
-  function showPage(n) {
-    current = (n + pages.length) % pages.length;
-    img.src = pages[current];
-    counter.textContent = `Page ${current + 1} / ${pages.length}`;
+  function showPageRythme(n) {
+    currentRythme = (n + pagesRythme.length) % pagesRythme.length;
+    imgRythme.src = pagesRythme[currentRythme];
+    counterRythme.textContent = `Page ${currentRythme + 1} / ${pagesRythme.length}`;
   }
 
-  function prevPage() { showPage(current - 1); }
-  function nextPage() { showPage(current + 1); }
+  function prevPageRythme() { showPageRythme(currentRythme - 1); }
+  function nextPageRythme() { showPageRythme(currentRythme + 1); }
 </script>
