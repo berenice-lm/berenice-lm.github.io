@@ -49,12 +49,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Introduction
-    url:               /introduction/
   - title:             La progressivité dans les médias
     url:               /progressivite/
   - title:             Les piliers de la progressivité
     url:               /piliers/
+  - title:             Expériences
+    url:               /experience/
   - title:             La progressivité en BD
     url:               /BD/
 
@@ -425,3 +425,6 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+# Ajoutez cette ligne pour définir le favicon personnalisé :
+favicon: /assets/img/favicon.ico
