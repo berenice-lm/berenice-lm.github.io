@@ -1,20 +1,13 @@
-# Hydejack Starter Kit
+# Site de vulgarisation scientifique autour de la progressivité
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+<img width="897" height="517" alt="site" src="https://github.com/user-attachments/assets/0de77370-0f6d-4dc6-a166-95bdfa9f3778" />
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+## Contexte
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+Tout le monde connaît Bing et Google Maps, ces cartes topographiques pan-scalaires qui permettent de naviguer dans l’espace à travers les échelles en zoomant. Ce que peu de monde sait en revanche, c’est que ces cartes reposent sur un design très complexe, afin de sélectionner et simplifier les informations essentielles pour chaque niveau de zoom. Encore aujourd’hui, ce processus appelé « généralisation cartographique » se heurte à de nombreux obstacles, que la nécessaire automatisation du processus ne fait qu’aggraver. Qui n’a jamais perdu ses repères d’un zoom à l’autre ? Qui n’a jamais plissé les yeux devant l’averse de symboles de Google Maps ? Qui ne s’est jamais étonné de la disparition soudaine d’une rivière lors d’un zoom arrière ? 
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
+## La progressivité
 
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+Ce site a pour objectif d'accompagner ma thèse autour d'un concept encore trop peu considéré au sein du design pan-scalaire d’une carte : la progressivité. Encore assez peu caractérisé, son rôle n’en est pas moins essentiel afin de permettre un confort de lecture suffisant pour que notre cerveau garde ses repères malgré la transformation perpétuelle des vues cartographiques et de ses données. Mais concrètement, la progressivité... ça veut dire quoi ? Pour mieux comprendre l'aspect mécanique d'un bon enchaînement d'image, je vous propose de plonger ensemble dans les autres arts maîtrisant le design panoptique d'une main de maître : le cinéma et la bande dessinée. La musique n'est également pas en reste, bien qu'elle ne manipule pas d'images mais des sons. Tous partagent des aspects très similaires de la progressivité et il ne tient qu'à vous de découvrir en quoi ils partagent autant de points communs avec la cartographie.
+
+Bonne lecture !
