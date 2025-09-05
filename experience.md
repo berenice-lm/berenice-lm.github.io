@@ -1,15 +1,13 @@
 ---
-layout: about
-image: /assets/img/blog/hydejack-9.jpg
+layout: post
+title: Experience
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
-hide_description: true
-redirect_from:
-  - /download/
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+sitemap: false
+hide_last_modified: true
 ---
 
-# About
+# Expériences cartographiques
 
 <!--author-->
 
