@@ -302,10 +302,6 @@ collections:
     permalink:         /projects/:path/
     output:            true
 
-  example:
-      output: true
-      permalink: /example/:path/
-      
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
 
