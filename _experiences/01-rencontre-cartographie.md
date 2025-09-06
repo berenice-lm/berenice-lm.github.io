@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Rencontre autour de la cartographie
 date: 2023-10-12
-layout: post            # ou "project" si tu préfères le layout project ; utilisé pour la page individuelle
 image:
   path: /assets/img/geovis.png
 description: Une courte phrase résumant l'expérience.
