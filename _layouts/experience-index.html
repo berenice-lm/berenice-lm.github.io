@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="content">
+  <h1>{{ page.title }}</h1>
+
+  <section class="posts">
+    {% assign items = site.example | sort: "date" | reverse %}
+    {% for post in items %}
+      <article class="h-entry" style="margin-bottom:2.5rem">
+        <h2 class="p-name" style="margin-bottom:0.5rem">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+
+        {% assign img = nil %}
+        {% if post.image and post.image.path %}
+          {% assign img = post.image.path %}
+        {% elsif post.image %}
+          {% assign img = post.image %}
+        {% endif %}
+
+        {% if img %}
+          <a class="u-photo" href="{{ post.url | relative_url }}">
+            <img src="{{ img | relative_url }}" alt="{{ post.title }}" style="display:block;max-width:100%;height:auto;margin:0.5rem 0 0.5rem 0">
+          </a>
+        {% endif %}
+
+        <p class="post-meta" style="margin:0">
+          <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+        </p>
+      </article>
+    {% endfor %}
+  </section>
+</div>
