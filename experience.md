@@ -1,5 +1,5 @@
 ---
-layout: experience-index
+layout: experience-grid
 title: Expériences
 permalink: /experience/
 ---

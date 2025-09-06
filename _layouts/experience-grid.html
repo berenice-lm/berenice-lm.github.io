@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<div class="content">
+  <h1>{{ page.title }}</h1>
+
+  <section class="exp-grid-wrapper">
+    {% assign items = site.experiences | sort: "date" | reverse %}
+    {% if items.size == 0 %}
+      <p>Aucune expérience pour l'instant.</p>
+    {% else %}
+      <div class="exp-grid">
+        {% for post in items %}
+          <article class="exp-card">
+            <h2 class="exp-card-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            {% assign img = nil %}
+            {% if post.image and post.image.path %}
+              {% assign img = post.image.path %}
+            {% elsif post.image %}
+              {% assign img = post.image %}
+            {% endif %}
+
+            {% if img %}
+              <a class="exp-card-image-link" href="{{ post.url | relative_url }}">
+                <img src="{{ img | relative_url }}" alt="{{ post.title }}" class="exp-card-image">
+              </a>
+            {% else %}
+              <!-- optionnel : image de fallback -->
+              <!-- <img src="/assets/img/default-experience.jpg" alt="No image" class="exp-card-image"> -->
+            {% endif %}
+
+            <p class="exp-card-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%Y-%m-%d" }}
+              </time>
+            </p>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+</div>
+
+<style>
+/* layout grid 2 colonnes, responsive */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* card styling simple, adapte au thème si tu veux */
+.exp-card {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* titre */
+.exp-card-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+}
+
+/* image sous le titre, responsive */
+.exp-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.5rem 0;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* date */
+.exp-card-date {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* mobile: une colonne */
+@media (max-width: 800px) {
+  .exp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* si tu veux espacer la page du haut dans hydejack */
+.exp-grid-wrapper { margin-top: 1rem; }
+</style>
