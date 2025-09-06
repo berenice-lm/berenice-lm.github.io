@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="content">
+  <h1>{{ page.title }}</h1>
+
+  <div class="cards">
+    {% for post in site.example %}
+      <article class="card">
+        <a href="{{ post.url | relative_url }}" class="no-hover">
+          {% if post.image.path %}
+            <img src="{{ post.image.path | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
+          <div class="card-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</div>

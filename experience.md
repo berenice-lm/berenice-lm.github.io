@@ -1,5 +1,5 @@
 ---
-layout: blog
-title: Exemple Blog
-permalink: /example-blog/
+layout: blog-example
+title: Expériences
+permalink: /experience/
 ---
