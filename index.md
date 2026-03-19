@@ -5,6 +5,7 @@ sitemap: true
 cover: true
 ---
 
+
 (écrire ici l'introduction)
 
-## Articles
+![Simpsons généralisation](/assets/gif/simpsons_generalisation.gif)
