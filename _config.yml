@@ -116,6 +116,9 @@ collections:
   experiences:
     output: true
     permalink: /:title/
+  piliers:
+    output: true
+    permalink: /:title/
 
 ########################################################################################################################
 # 3rd Party Integrations                                                                                               #

@@ -1,0 +1,99 @@
+---
+layout: page
+---
+
+<style>
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience-card {
+  background: #fff;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.experience-card-content {
+  padding: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-card-content h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: rgb(79, 177, 186);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Mobile : une seule colonne */
+@media (max-width: 56em) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .experience-card img {
+    height: 200px;
+  }
+}
+</style>
+
+{{ content }}
+
+<div class="experience-grid">
+  {% assign items = site.piliers | sort: "date" %}
+  {% for pilier in items %}
+    <article class="experience-card">
+      <a href="{{ pilier.url | relative_url }}">
+        {% if pilier.image.path %}
+          <img src="{{ pilier.image.path | relative_url }}" alt="{{ pilier.title }}">
+        {% elsif pilier.image %}
+          <img src="{{ pilier.image | relative_url }}" alt="{{ pilier.title }}">
+        {% else %}
+          <div style="width: 100%; height: 250px; background: linear-gradient(135deg, rgb(79,177,186), rgb(25,55,71)); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+            {{ pilier.title }}
+          </div>
+        {% endif %}
+        <div class="experience-card-content">
+          <h2>{{ pilier.title }}</h2>
+        </div>
+      </a>
+    </article>
+  {% endfor %}
+</div>
