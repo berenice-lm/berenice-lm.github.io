@@ -42,7 +42,7 @@ share-links-active:
 # Add links to the sidebar.
 menu:
   - title: La progressivité dans les médias
-    url: /progressivite/
+    url: /media/
   - title: Les piliers de la progressivité
     url: /piliers/
   - title: Expériences cartographiques
