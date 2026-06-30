@@ -15,18 +15,4 @@ Maintenant, tout l’enjeu réside dans le « comment ». Retirer trop de détai
 
 Si ce sujet vous intéresse, n’hésitez pas à explorer les différentes sections du site !
 
-                  ☆
-☆  --------------
-  /__________ \         ☆
- |                       |
- \___________ /                                  ☆
-   \.._______../
-    |   /\__/\   |
-    | ( •    •    ) |   ☆                     ☆
-    | / U  U  \  |
-    =========
-     \________/.
-                               ☆                           ☆
-
-   ☆                                         ☆
-                     ☆                               ☆
+![chat mignon](/assets/gif/kawaii-cat.gif)
