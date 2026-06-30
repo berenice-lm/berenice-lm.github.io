@@ -119,6 +119,9 @@ collections:
   piliers:
     output: true
     permalink: /:title/
+  media:
+    output: true
+    permalink: /:title/
 
 ########################################################################################################################
 # 3rd Party Integrations                                                                                               #

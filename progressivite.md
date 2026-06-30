@@ -1,20 +1,8 @@
 ---
-layout: page
+layout: media-grid
 title: La progressivité dans les médias
-permalink: /progressivite/
+permalink: /media/
 sitemap: false
+description: >
+  description
 ---
-
-blabla introduction
-
-## La progressivité dans le cinéma
-
-blabla
-
-## La progressivité dans la bande dessinée
-
-blabla
-
-## La progressivité dans la musique
-
-blabla
