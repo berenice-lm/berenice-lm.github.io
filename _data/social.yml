@@ -199,6 +199,9 @@ paypal:
   name: PayPal
   icon: icon-paypal
   prepend: "https://www.paypal.me/"
+about:
+  name: About
+  icon: icon-user-plus
 keybase:
   name: Keybase
   icon: icon-key
